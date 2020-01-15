@@ -11,12 +11,10 @@ class TodoItem extends React.Component {
     }
 
     handleChange() {
-        // this.props.onCheckboxChange(this.props.id);
         this.props.toggleTodo(this.props.id);
     }
 
     handleDelete() {
-        // this.props.handleDelete(this.props.id);
         this.props.deleteTodo(this.props.id);
     }
 

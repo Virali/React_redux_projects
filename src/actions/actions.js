@@ -1,7 +1,6 @@
 let nextTodoId = 0;
 
 export const addTodo = (text, date) => {
-   console.log("action");
    return {
    type: 'ADD_TODO',
    id: nextTodoId++, 
@@ -18,9 +17,3 @@ export const deleteTodo = id => ({
    type: 'DELETE_TODO',
    id
 })
-
-// export const filterList = (text, date) => ({
-//    type: 'FILTER_LIST',
-//    text,
-//    date
-// })
